@@ -1,2 +1,2 @@
 # cifrovye_kafedry
-cifrovye_kafedry2024
+Доржиев Арсалан Баирович
