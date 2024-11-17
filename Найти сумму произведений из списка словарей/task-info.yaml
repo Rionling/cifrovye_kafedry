@@ -1,0 +1,94 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 0
+        length: 298
+        placeholder_text: |-
+          # TODO решите задачу
+          def task() -> float:
+              ...
+          
+          
+          print(task())
+        initial_state:
+          length: 65
+          offset: 0
+        initialized_from_dependency: false
+        selected: true
+        status: Solved
+        encrypted_possible_answer: |-
+          import json
+          
+          
+          def task() -> float:
+              filename = "input.json"
+              with open(filename) as f:
+                  json_data = json.load(f)
+          
+              sum_values = sum([item["score"] * item["weight"] for item in json_data])
+              return round(sum_values, 3)
+          
+          
+          print(task())
+    text: |
+      # TODO решите задачу
+      def task() -> float:
+          ...
+      
+      
+      print(task())
+    learner_created: false
+  - name: __init__.py
+    visible: false
+    learner_created: false
+  - name: tests/output.txt
+    visible: false
+    text: |
+      2.296
+    learner_created: false
+  - name: input.json
+    visible: true
+    text: |-
+      [
+        {
+          "score": 0.0009456152645028281,
+          "weight": 1
+        },
+        {
+          "score": 0.00020640167757499364,
+          "weight": 1
+        },
+        {
+          "score": 0,
+          "weight": 1
+        },
+        {
+          "score": 1.6557065217391307,
+          "weight": 1
+        },
+        {
+          "score": 0,
+          "weight": 1
+        },
+        {
+          "score": 0.6066065217391303,
+          "weight": 1
+        },
+        {
+          "score": 0.03126181644071977,
+          "weight": 1
+        },
+        {
+          "score": 0.001253973281817707,
+          "weight": 1
+        }
+      ]
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 17 Nov 2024 18:16:05 UTC"
+record: -1
+solution_hidden: true
